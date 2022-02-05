@@ -1,0 +1,33 @@
+body{
+    background-color: rgb(248, 188, 115);
+    font-family: 'Poppins', sans-serif;
+}
+form{
+    background-image: url(../images/new.png);
+    padding: 20px;
+    width: 70%;
+    margin-top: 30px;
+}
+input{
+    margin: 10px;
+    width: 50%;
+    height: 30px;
+    background-color: rgba(255, 228, 196, 0.829) ;
+    border-top-style: hidden;
+    border-left-style: hidden;
+    border-right-style: hidden;
+    border-bottom-style: groove;
+    padding:10px;
+}
+input:hover{
+    transform: scale(1.1,1.1);
+}
+.for-style{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.error{
+    color: red;
+    text-align: center;
+}

@@ -1,0 +1,56 @@
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: rgba(3, 3, 36, 0.877);
+    color: white;
+    margin: 0;
+}
+h1{
+    font-size: 36px;
+    text-shadow: 2px 2px 5px grey;
+}
+nav{
+    margin-top: 30px;
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 20px;
+    margin-right: 120px;
+}
+a{
+    text-decoration: none;
+    color: white;
+    padding: 0 20px;
+    font-size: 20px;
+    background-color: rgb(42, 109, 233);
+    box-shadow: 5px 5px 5px grey;
+    border-radius: 10px;
+    margin: 10px;
+}
+.for-flex{
+    display: flex;
+    margin-left: 20px;
+    margin-bottom: 90px;
+}
+.half-width{
+    width: 50%;
+    margin: 20px;
+}
+.half-width img{
+    width: 80%;
+    margin-top: 20px;
+    margin-left: 50px;
+    border-radius: 40px;
+}
+#offer{
+    text-align: center;
+}
+.box{
+    background-color: rgb(32, 32, 180);
+    box-shadow: 5px 10px 5px grey;
+    padding: 15px;
+    border-radius: 10px;
+}
+footer{
+    background-color: grey;
+    text-align: center;
+    padding: 20px;
+}

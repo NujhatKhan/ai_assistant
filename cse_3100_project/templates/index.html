@@ -1,0 +1,57 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <title>AI Assistant</title>
+    <script src="https://kit.fontawesome.com/ec036db656.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="{% static 'styles/home.css' %}">
+</head>
+<body>
+    <nav>
+        {%if user.is_authenticated%}
+            <p>Hello,{{user.first_name}}</p>
+            <a href="accounts/logout">Logout</a>
+            <a href="https://nujhatkhan.github.io/external/">Assistant</a>
+        {%else%}
+            <a href="accounts/registration">Register</a>
+            <a href="accounts/login">Login</a>
+        {%endif%}
+    </nav>
+    <section class="for-flex">
+        <div class="half-width">
+            <h1>AI Voice Assistant</h1>
+            <p>Welcome to my page where by simply logging in you can use your personal voice controlled ai assistant. You can reach a new level of productivity by using this virtual assistant service. If you don't have an account yet, please go to register option.</p> <p>To know what the virtual assistant can do, scroll down.</p>
+        </div>
+        <div class="half-width">
+            <img src="{% static 'images/Virtual-assistant-1.png' %}">
+        </div>
+    </section>
+    <h2 id="offer">What the Virtual Assistant Offer</h2>
+    <section class="for-flex">
+        <div class="half-width box">
+            <h3>Can open apps</h3>
+            <p>The assistant can open apps like google, youtube and gmail. For that, the user needs to give command like open youtube or open google or open gmail</p>
+        </div>
+        <div class="half-width box">
+            <h3>Can fetch information from wikipedia and web</h3>
+            <p>The assistant can fetch info. about anything from wikipedia. For that user needs to add the word wikipedia in command. To search anything add the keyword search in your voice command. </p>
+        </div>
+        <div class="half-width box">
+            <h3>Can tell time and give weather update</h3>
+            <p>Also the assistant give you current time and weather update.</p>
+        </div>
+    </section>
+    <footer>
+        <i class="far fa-copyright"></i><small> Nujhat Khan</small>
+        <p>Rajshahi University of Engineering and Technology</p>
+        <p>Developed as part of university project.</p>
+        <p> For any info contact nujhatkhan201@gmail.com</p>
+    </footer>
+</body>
+</html>
